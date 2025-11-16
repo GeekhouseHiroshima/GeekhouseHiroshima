@@ -62,4 +62,4 @@ hr{border-bottom-width:1px;border-style:solid;border-color:#969696}.navigation-c
 .breadcrumb-options a:active,
 .breadcrumb-options a:focus,
 .breadcrumb-options .j-nav-current:link,
-.breadcrumb-options .j-nav-current:visited{color:#240f03;background-color:rgba(0,0,0,0)}.flex-background-options{background-color:#f2c314}.j-website-title-content{font-weight:normal;font-style:normal;font-family:"Roboto",sans-serif,"google"}
+.breadcrumb-options .j-nav-current:visited{color:#240f03;background-color:rgba(0,0,0,0)}.flex-background-options{background-color:#f2c314}.j-website-title-content{font-weight:normal;font-style:normal;font-family:"Roboto",sans-serif,"google"}.jtpl-header--image{min-height:240px;background:url("../img/header-bg.jpg") center/cover no-repeat}
