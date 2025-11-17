@@ -59,10 +59,12 @@ a:focus {
 
 .site-header {
   background: linear-gradient(135deg, rgba(8, 76, 76, 0.9), rgba(55, 130, 200, 0.85)),
-    url("{{ '/img/header-bg.jpg' | relative_url }}") center/cover fixed;
+    url("{{ site.header_background | default: '/img/header-bg.jpg' | relative_url }}") center/cover fixed;
   color: #fff;
   padding: 4rem 0 2.5rem;
   box-shadow: var(--shadow);
+  background-size: cover;
+  background-position: center;
 }
 
 .site-branding {
