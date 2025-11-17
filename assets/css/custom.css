@@ -1,0 +1,252 @@
+---
+---
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Slab:wght@400;700&display=swap");
+
+:root {
+  --color-primary: #2e7d7b;
+  --color-primary-dark: #1f5d5b;
+  --color-accent: #3782c8;
+  --color-text: #2a2a2a;
+  --color-muted: #6b6b6b;
+  --color-border: #e0e0e0;
+  --color-background: #f7f8f9;
+  --content-width: min(960px, 90vw);
+  --shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-accent);
+}
+
+.site {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-header {
+  background: linear-gradient(135deg, rgba(8, 76, 76, 0.9), rgba(55, 130, 200, 0.85)),
+    url("{{ '/img/header-bg.jpg' | relative_url }}") center/cover fixed;
+  color: #fff;
+  padding: 4rem 0 2.5rem;
+  box-shadow: var(--shadow);
+}
+
+.site-branding {
+  width: var(--content-width);
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.site-title {
+  margin: 0;
+  font-family: "Roboto Slab", serif;
+  font-size: clamp(2.8rem, 4vw, 4.4rem);
+  letter-spacing: 0.05em;
+}
+
+.site-title a {
+  color: inherit;
+}
+
+.site-description {
+  margin: 0.8rem auto 0;
+  font-weight: 300;
+  max-width: 48ch;
+}
+
+.site-nav {
+  width: var(--content-width);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav a {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  padding: 0.8rem 1.6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  transition: background-color 150ms ease, color 150ms ease;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.site-content {
+  flex: 1;
+  width: var(--content-width);
+  margin: 4rem auto;
+}
+
+.page {
+  background-color: #fff;
+  border-radius: 22px;
+  padding: clamp(2.4rem, 4vw, 4rem);
+  box-shadow: var(--shadow);
+}
+
+.page-header {
+  border-bottom: 3px solid var(--color-primary);
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.page-subtitle {
+  margin: 0.5rem 0 0;
+  color: var(--color-muted);
+  font-size: 1.4rem;
+}
+
+.page-body p {
+  margin: 0 0 1.4rem;
+}
+
+.page-body hr {
+  border: none;
+  border-top: 1px dashed var(--color-border);
+  margin: 3rem 0;
+}
+
+.page-body h2,
+.page-body h3 {
+  font-family: "Roboto Slab", serif;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-primary-dark);
+}
+
+.page-body ul,
+.page-body ol {
+  padding-left: 1.5rem;
+  margin: 0 0 1.5rem;
+}
+
+.page-body li + li {
+  margin-top: 0.5rem;
+}
+
+.page-body blockquote {
+  margin: 2rem 0;
+  padding: 1.5rem 2rem;
+  border-left: 5px solid var(--color-primary);
+  background: #f1f5f4;
+  font-style: italic;
+  color: var(--color-muted);
+}
+
+.page-body iframe {
+  width: 100%;
+  border: none;
+  border-radius: 14px;
+  box-shadow: inset 0 0 0 1px var(--color-border);
+  margin-bottom: 2rem;
+}
+
+.page-body img {
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  margin: 2rem auto;
+}
+
+.page-body a.button,
+.page-body .button {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0.6rem 1.8rem;
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  transition: background-color 150ms ease;
+}
+
+.page-body a.button:hover,
+.page-body .button:hover {
+  background: var(--color-primary-dark);
+  color: #fff;
+}
+
+.site-footer {
+  background-color: #111;
+  color: #c4c4c4;
+  text-align: center;
+  padding: 2.5rem 1rem;
+  font-size: 1.3rem;
+}
+
+.site-footer p {
+  margin: 0.4rem 0;
+}
+
+@media (max-width: 640px) {
+  .site-content {
+    width: min(94vw, 520px);
+    margin: 2.5rem auto;
+  }
+
+  .site-nav {
+    gap: 0.8rem;
+  }
+
+  .site-nav a {
+    font-size: 1.2rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .page {
+    padding: 2rem;
+    border-radius: 18px;
+  }
+}
