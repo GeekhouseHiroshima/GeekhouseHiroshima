@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'ja' }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {% assign page_title = page.title | default: site.title | default: "ギークハウス広島" %}
+    <title>{% if page.title %}{{ page_title }} | {{ site.title | default: "ギークハウス広島" }}{% else %}{{ page_title }}{% endif %}</title>
+    {% assign description = page.description | default: site.description %}
+    {% if description %}
+    <meta name="description" content="{{ description }}" />
+    {% endif %}
+    {% if site.theme_color %}
+    <meta name="theme-color" content="{{ site.theme_color }}" />
+    {% endif %}
+    {% if site.url %}
+    <link rel="canonical" href="{{ page.url | absolute_url }}" />
+    {% endif %}
+    {% assign locale = site.lang | replace: '-', '_' | default: 'ja_JP' %}
+    {% assign og_type = page.og_type | default: 'website' %}
+    {% assign og_image = page.og_image | default: page.image | default: site.og_image %}
+    <meta property="og:type" content="{{ og_type }}" />
+    <meta property="og:site_name" content="{{ site.title | default: 'ギークハウス広島' }}" />
+    <meta property="og:locale" content="{{ locale }}" />
+    <meta property="og:title" content="{{ page_title }}" />
+    {% if description %}
+    <meta property="og:description" content="{{ description }}" />
+    {% endif %}
+    {% if site.url %}
+    <meta property="og:url" content="{{ page.url | absolute_url }}" />
+    {% endif %}
+    {% if og_image %}
+    <meta property="og:image" content="{{ og_image | absolute_url }}" />
+    {% endif %}
+    <meta name="twitter:card" content="{{ page.twitter_card | default: 'summary_large_image' }}" />
+    {% if site.twitter_username %}
+    <meta name="twitter:site" content="@{{ site.twitter_username }}" />
+    {% endif %}
+    <meta name="twitter:title" content="{{ page_title }}" />
+    {% if description %}
+    <meta name="twitter:description" content="{{ description }}" />
+    {% endif %}
+    {% if og_image %}
+    <meta name="twitter:image" content="{{ og_image | absolute_url }}" />
+    {% endif %}
+    {% assign favicon = site.favicon | default: '/favicon.png' %}
+    <link rel="shortcut icon" href="{{ favicon | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/css/layout.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/css/web.css' | relative_url }}" />
+  </head>
+  <body>
+    <div class="site">
+      {% include header.html %}
+
+      <main class="site-content">
+        {{ content }}
+      </main>
+
+      {% include footer.html %}
+    </div>
+  </body>
+</html>

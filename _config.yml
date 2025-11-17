@@ -1,1 +1,10 @@
+title: ギークハウス広島
+description: 広島県三原市久井町にあるギークハウス広島の公式サイト。イベントや入居募集、農園の最新情報を紹介しています。
 theme: jekyll-theme-architect
+url: https://geekhousehiroshima.github.io/GeekhouseHiroshima
+lang: ja-JP
+theme_color: "#2e7d7b"
+og_image: /img/hero-drone.jpg
+twitter_username: GeekHiroshima
+facebook_page: https://www.facebook.com/GeekhouseHiroshima
+favicon: /img/favicon.png
