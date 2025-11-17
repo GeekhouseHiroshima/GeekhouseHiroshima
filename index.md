@@ -51,3 +51,4 @@ title: ギークハウス広島
 
 **@GeekHiroshima**
 {% include sns-facebook.html %}
+{% include sns-X.html %}
