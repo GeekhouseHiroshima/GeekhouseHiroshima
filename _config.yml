@@ -6,7 +6,7 @@ url: https://geekhousehiroshima.github.io
 baseurl: /GeekhouseHiroshima
 language: ja
 lang: ja-JP
-urlimg: https://geekhousehiroshima.github.io/GeekhouseHiroshima/img
+urlimg: https://geekhousehiroshima.github.io/GeekhouseHiroshima/img/
 logo: logo-geekhouse.png
 theme_color: "#2e7d7b"
 og_image: /img/hero-drone.jpg
@@ -17,3 +17,10 @@ facebook_page: https://www.facebook.com/GeekhouseHiroshima
 favicon: /img/favicon.png
 header_background: /img/header-bg.jpg
 credits: '<p>&copy; {{ site.time | date: ''%Y'' }} ギークハウス広島</p>'
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      header:
+        image_fullwidth: "header-bg.jpg"
