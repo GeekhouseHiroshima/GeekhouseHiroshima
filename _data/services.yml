@@ -1,0 +1,13 @@
+- menu_name: "サービス"
+
+- name: "お問い合わせ"
+  url: "/contact.html"
+  title: "お問い合わせ"
+
+- name: "利用について"
+  url: "/usage.html"
+  title: "利用方法"
+
+- name: "プライバシーポリシー"
+  url: "/privacy.html"
+  title: "プライバシーポリシー"

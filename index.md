@@ -1,6 +1,7 @@
 ---
 layout: page
 title: ギークハウス広島
+homepage: true
 ---
 
 ---

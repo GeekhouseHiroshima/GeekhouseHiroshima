@@ -1,0 +1,15 @@
+- title: ホーム
+  url: /
+  side: left
+- title: 利用について
+  url: /usage.html
+  side: left
+- title: 地域の情報
+  url: /local-info.html
+  side: left
+- title: ハウスルール
+  url: /house-rules.html
+  side: left
+- title: お問い合わせ
+  url: /contact.html
+  side: right

@@ -1,0 +1,9 @@
+- name: X
+  url: https://twitter.com/GeekHiroshima
+  class: icon-twitter
+  title: Xでつながる
+
+- name: Facebook
+  url: https://www.facebook.com/GeekhouseHiroshima
+  class: icon-facebook
+  title: Facebookページ

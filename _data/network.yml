@@ -1,0 +1,11 @@
+- menu_name: "リンク"
+
+- name: "Facebook"
+  url: "https://www.facebook.com/GeekhouseHiroshima"
+  class: "icon-facebook"
+  title: "Facebookページ"
+
+- name: "X (Twitter)"
+  url: "https://twitter.com/GeekHiroshima"
+  class: "icon-twitter"
+  title: "Xで最新情報を見る"
