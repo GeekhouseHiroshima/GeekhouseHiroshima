@@ -11,13 +11,6 @@ title: お問い合わせ
 
 FacebookやXでのご連絡も可能です。
 
-#### 連絡先
-
-- 住所: 〒722-1414 広島県三原市久井町坂井原483
-- 電話: 070-6509-3763
-
-[プライバシーポリシー](privacy.html)が適用されます。
-
 #### フォームで送信
 
 <form action="https://formspree.io/f/xovyvpyg" method="post" class="contact-form">
@@ -34,3 +27,10 @@ FacebookやXでのご連絡も可能です。
 
   <button type="submit" class="button">送信</button>
 </form>
+
+[プライバシーポリシー](privacy.html)が適用されます。
+
+#### 連絡先
+
+- 住所: 〒722-1414 広島県三原市久井町坂井原483
+- 電話: 070-6509-3763
