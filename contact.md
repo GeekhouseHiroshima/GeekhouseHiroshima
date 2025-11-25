@@ -31,8 +31,3 @@ FacebookやXでのご連絡も可能です。
     <button type="submit" class="button">送信</button>
   </div>
 </form>
-
-#### 連絡先
-
-- 住所: 〒722-1414 広島県三原市久井町坂井原483
-- 電話: 070-6509-3763
