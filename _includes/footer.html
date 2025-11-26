@@ -1,4 +1,5 @@
 <footer class="site-footer">
   <p>〒722-1414 広島県三原市久井町坂井原483 / Tel: (070) 6509-3763</p>
-  <p>&copy; {{ site.time | date: '%Y' }} {{ site.title | default: "ギークハウス広島" }}</p>
+  {% assign current_year = site.time | date: '%Y' %}
+  <p>&copy; 2017-{{ current_year }} {{ site.title | default: "ギークハウス広島" }}</p>
 </footer>
