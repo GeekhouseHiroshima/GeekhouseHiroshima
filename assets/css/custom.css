@@ -108,6 +108,16 @@ a:focus {
   max-width: 48ch;
 }
 
+.sns-x {
+  max-width: 480px;
+  margin: 2rem auto;
+}
+
+.twitter-timeline {
+  width: 100% !important;
+  min-height: 320px;
+}
+
 .site-nav {
   width: var(--content-width);
   margin: 0 auto;
