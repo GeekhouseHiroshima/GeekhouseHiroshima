@@ -4,8 +4,8 @@ theme: jekyll-theme-architect
 url: https://geekhousehiroshima.github.io/GeekhouseHiroshima
 lang: ja-JP
 theme_color: "#2e7d7b"
-og_image: /img/hero-drone.jpg
+og_image: /assets/img/hero-drone.jpg
 twitter_username: GeekHiroshima
 facebook_page: https://www.facebook.com/GeekhouseHiroshima
-favicon: /img/favicon.png
-header_background: /img/header-bg.jpg
+favicon: /assets/img/favicon.png
+header_background: /assets/img/header-bg.jpg

@@ -5,7 +5,7 @@ title: ギークハウス広島
 
 ---
 
-![](img/hero-drone.jpg)
+![]({{ '/assets/img/hero-drone.jpg' | relative_url }})
 
 「**ギークハウス広島**」が広島県三原市久井町にオープン。入居者募集中です！
 
@@ -31,7 +31,7 @@ title: ギークハウス広島
 
 ### ぎーひろ農園
 
-![](img/farm-events.jpg)
+![]({{ '/assets/img/farm-events.jpg' | relative_url }})
 
 不定期に農園イベントが発生します。FacebookページやTwitterでのチェックをお願いします。
 

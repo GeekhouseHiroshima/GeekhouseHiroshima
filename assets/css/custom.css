@@ -59,7 +59,7 @@ a:focus {
 
 .site-header {
   background: linear-gradient(135deg, rgba(8, 76, 76, 0.9), rgba(55, 130, 200, 0.85)),
-    url("{{ site.header_background | default: '/img/header-bg.jpg' | relative_url }}");
+    url("{{ site.header_background | default: '/assets/img/header-bg.jpg' | relative_url }}");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -80,10 +80,26 @@ a:focus {
   font-family: "Roboto Slab", serif;
   font-size: clamp(2.8rem, 4vw, 4.4rem);
   letter-spacing: 0.05em;
+  display: flex;
+  justify-content: center;
 }
 
-.site-title a {
+.site-logo-link {
   color: inherit;
+  display: inline-flex;
+  align-items: center;
+  gap: 1.2rem;
+  text-decoration: none;
+}
+
+.site-logo {
+  height: 72px;
+  width: auto;
+  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.12));
+}
+
+.site-title-text {
+  line-height: 1.1;
 }
 
 .site-description {

@@ -1,7 +1,13 @@
 <header class="site-header">
   <div class="site-branding">
     <h1 class="site-title">
-      <a href="{{ '/' | relative_url }}">{{ site.title | default: "ギークハウス広島" }}</a>
+      <a class="site-logo-link" href="{{ '/' | relative_url }}">
+        <img
+          class="site-logo"
+          src="{{ '/assets/img/logo-geekhouse.png' | relative_url }}"
+          alt="{{ site.title | default: 'ギークハウス広島' }}" />
+        <span class="site-title-text">{{ site.title | default: "ギークハウス広島" }}</span>
+      </a>
     </h1>
     {% if site.description %}
     <p class="site-description">{{ site.description }}</p>
