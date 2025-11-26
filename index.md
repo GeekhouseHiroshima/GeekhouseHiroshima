@@ -50,5 +50,7 @@ title: ギークハウス広島
 ---
 
 **@GeekHiroshima**
+<div class="sns-wrapper">
 {% include sns-facebook.html %}
 {% include sns-X.html %}
+</div>

@@ -108,14 +108,37 @@ a:focus {
   max-width: 48ch;
 }
 
+.sns-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 2rem 0;
+}
+
+.sns-facebook,
 .sns-x {
-  max-width: 480px;
-  margin: 2rem auto;
+  flex: 1 1 320px;
+  max-width: 420px;
+}
+
+.sns-facebook iframe {
+  width: 100%;
+  min-height: 500px;
+}
+
+.sns-x {
+  margin: 0;
+}
+
+.sns-x {
+  margin: 0;
 }
 
 .twitter-timeline {
   width: 100% !important;
-  min-height: 320px;
+  min-height: 360px;
 }
 
 .site-nav {
